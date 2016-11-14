@@ -1,4 +1,8 @@
-
+/*
+* A simple implementation of Stack using LinkedList.
+* author: ArvindRS
+* date: 11/13/16
+*/
 public class StackLinkedListImplementation {
 
 	private Node first = null;
