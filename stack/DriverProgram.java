@@ -3,12 +3,11 @@
 * author: ArvindRS
 * date: 11/13/16
 */
-
 public class DriverProgram {
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
-		StackLinkedListImplementation stack = new StackLinkedListImplementation();
+		StackLinkedListImplementation<String> stack = new StackLinkedListImplementation<String>();
 		StackArrayImplementation stackArray = new StackArrayImplementation();
 
 		String[] input = {"foo","bar","-","bar","-","dekho","-","-","bar","-"};

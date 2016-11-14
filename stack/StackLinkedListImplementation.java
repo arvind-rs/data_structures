@@ -3,13 +3,13 @@
 * author: ArvindRS
 * date: 11/13/16
 */
-public class StackLinkedListImplementation {
+public class StackLinkedListImplementation<Type> {
 
 	private Node first = null;
 	private int N = 0;
 
 	private class Node {
-		String item;
+		Type item;
 		Node next;
 	}
 
@@ -17,7 +17,7 @@ public class StackLinkedListImplementation {
 		return first == null; 
 	}
 
-	public void push(String item) {
+	public void push(Type item) {
 		Node oldFirst = first;
 		first = new Node();
 		first.item = item;
@@ -25,15 +25,15 @@ public class StackLinkedListImplementation {
 		N++;
 	}
 
-	public String pop() {
-		String item = first.item;
+	public Type pop() {
+		Type item = first.item;
 		Node newFirst = first.next;
 		first = newFirst;
 		N--;
 		return item;
 	}
 
-	public String top() {
+	public Type top() {
 		return first.item;
 	}
 
