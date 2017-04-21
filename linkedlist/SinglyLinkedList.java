@@ -1,5 +1,9 @@
 import java.util.*;
 
+/*
+* A simple implementation of LinkedList data structure in java
+*/ 
+
 public class SinglyLinkedList<T> {
 
 	Node head;
